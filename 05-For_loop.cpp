@@ -27,15 +27,60 @@ int main(){
 
 
     //Power print
-    int n,i,pow,num;
-    cout<<"Enter the number";
-    cin>>n;
-    cout<<"Enter the Power";
-    cin>>pow;
-    num=n;
+    // int n,i,pow,num;
+    // cout<<"Enter the number";
+    // cin>>n;
+    // cout<<"Enter the Power";
+    // cin>>pow;
+    // num=n;
 
-    for(i=1;i<pow;i=i+1){
-        num=num*n;
+    // for(i=1;i<pow;i=i+1){
+    //     num=num*n;
+    // }
+    // cout<<num;
+
+
+    // sum of the natural number
+//     int n,i,sum=0;
+//     cout<<"Enter the Number";
+//     cin>>n;
+//     for(i=1; i<=n ; i++){
+//         sum=sum+i;
+//     }
+//     cout<<sum<<endl;
+// }
+
+
+// factoria nuumber
+    // int n,i,fact=1;
+    // cout<<"Enter the Number";
+    // cin>>n;
+    // for(i=1; i<=n ; i++){
+    //     fact=fact*i;
+    //     cout<<fact<<endl;
+    // }
+
+    // prime number
+    int n,i;
+    cout<<"Enter the number";
+    cin>>n; 
+    if(n<2){
+        cout<<"Not Prime Number:";
+        return 0;
     }
-    cout<<num;
+    else{
+        for(i=2; i<n; i++){
+            if(n%i==0){
+                cout<<"Not Prime Number:";
+                return 0;
+            }
+
+        }   
+        cout<<"Prime Number:";
+        return 0;
+    }
+    return 0;
+
+
+    
 }
